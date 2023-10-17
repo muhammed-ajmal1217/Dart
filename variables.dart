@@ -17,5 +17,7 @@ void main(List<String> args) {
   print(g);
   var h='Ajmal';//can add all type of datas above;
   print(h);
+  dynamic i='Ajmal';// can add all type of datas above and also images
+  print(i);
 
 }
