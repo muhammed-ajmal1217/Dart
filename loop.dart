@@ -3,6 +3,10 @@ import 'dart:io';
 void main(List<String> args) {
 
   // for Loop===================================================================================================
+
+  // for(condition){
+  //  code....
+  // }
   
   List names=['Ajmal','Abid','Shamal','Arshad','Akhil'];
   for (int i=0;i<names.length;i++){
@@ -20,38 +24,53 @@ void main(List<String> args) {
   print(names3[i].toString().toUpperCase());   
   }
     print('____________________________________________');
+
   List names4=['Ajmal','Abid','Shamal','Arshad','Akhil'];
-
-  for (int i=0;i<=names4.length;i++){
-    for(int j=0;j<i;j++){
-      stdout.write(names4[j].toString().toUpperCase());
-    }   
-    stdout.writeln(' ');
-  }
-    print('____________________________________________');
-
   for (int i=names.length;i>=0;i--){
     for(int j=0;j<i;j++){
-      stdout.write(names4[j].toString().toUpperCase());
+      stdout.write(names4[j].toString().toLowerCase()+' ');
     }   
     stdout.writeln(' ');
   }
     print('____________________________________________');
-  //map================================================================================================================
-   var map=names.map((e) => e=names.length).toList();
-   print(map);
+   for (int i=0;i<=names4.length;i++){
+    for(int j=0;j<i;j++){
+      stdout.write(names4[j].toString().toUpperCase()+' ');
+    }   
+    stdout.writeln(' ');
+  }
+    print('____________________________________________');
 
-   var map1=names.map((e) => e=names.length).toString();
-   print(map1);
+  //whie loop======================================================================================================
 
-   var map2=names.map((e) =>names.runtimeType);
-   print(map2);
+  // while(condition){
+  //   code...
+  // }
 
-   var map3=names.map((e) => e=names.reversed);
-   print(map3);
+  var i = -1;
+  while(i<names4.length-1){
+    i++;
+    print(names4[i]);
+  }
+  print('____________________________________________');
+  var j = -1;
+  String h='';
+  while(j<names4.length-1){
+    j++;
+    h+=names4[j]+' ';
+    print(h);
+  }
+  print('____________________________________________');
 
-   var map4=names.map((e) => e=names.isEmpty?true:false);//ternary oprator;
-   print(map4);
-   
-   //while=====================================================================================
+
+  //for in==============================================================================================
+
+  // for(final elements in collection of datas){
+  //  code ...
+  // }
+
+  for (final elements in names4){
+    print(elements);
+  }
+  
 }
