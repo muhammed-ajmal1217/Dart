@@ -72,5 +72,17 @@ void main(List<String> args) {
   for (final elements in names4){
     print(elements);
   }
+  print('____________________________________________');
+  //do while=============================================================================================
+  // do{
+  //    code ...
+  // } while(condition);
+  
+  var m=0;
+  
+  do {
+    print(names4[m]);
+    m++;
+  } while (m<names4.length);
   
 }
