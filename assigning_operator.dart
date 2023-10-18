@@ -28,6 +28,7 @@ void main(List<String> args) {
   double number4 = 10;
    number4/=3;// number4 = number4 / 3
    print(number4.toStringAsFixed(2));// 3.33
+  // toStringAsFixed(2) is used to give the specified value after the point.
 
   // ~/=
 
@@ -38,6 +39,6 @@ void main(List<String> args) {
   
   double number6 = 120.34;
    number6 %=110.2;// number5 = number5 % 4
-   print(number6);// 2
+   print(number6);// 10.14
 
 }
