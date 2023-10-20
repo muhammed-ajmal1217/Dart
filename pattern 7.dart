@@ -2,13 +2,12 @@ import 'dart:io';
 
 void main(List<String> args) {
   for(int i=0;i<=5;i++){
-    for(int j=0;j<=i;j++){
-      if(j==5||j==i||j==0||i==5){
-        stdout.write("*");
-      }else{
-        stdout.write(' ');
-      }
+    for(int s=0;s<=5-i;s++){
+      stdout.write(' ');
     }
-    stdout.writeln(' ');
+    for (var j = 0; j < i; j++) {
+      stdout.write("* ");
+    }
+    stdout.writeln();
   }
 }
